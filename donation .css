@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+.header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Donation Container */
+.donation-box {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.donation-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Payment Method Cards */
+.methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.method-card {
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.method-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.method-card h3 {
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.method-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fcc;
+}

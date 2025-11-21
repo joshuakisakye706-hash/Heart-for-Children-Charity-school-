@@ -1,0 +1,155 @@
+/* -----------------------------------
+   General Page Settings
+----------------------------------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #f9fafc;
+}
+
+/* -----------------------------------
+   Marquee Bar
+----------------------------------- */
+.marquee-bar {
+  background: linear-gradient(90deg, #ffb703, #fca311);
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+/* -----------------------------------
+   Header / Navbar
+----------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #023e8a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+/* -----------------------------------
+   Hero Section
+----------------------------------- */
+.hero {
+  background: linear-gradient(to right, #0077b6, #0096c7);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #ffd60a;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #ffd60a;
+  color: #023e8a;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: white;
+  color: #0077b6;
+}
+
+/* -----------------------------------
+   About Section
+----------------------------------- */
+.about {
+  background: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about h2 {
+  color: #023e8a;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 17px;
+  color: #555;
+}
+
+/* -----------------------------------
+   Footer
+----------------------------------- */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* -----------------------------------
+   Responsive Design
+----------------------------------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+.img {
+  border-radius: 10px;
+}
+
+
+

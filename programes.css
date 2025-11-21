@@ -1,0 +1,34 @@
+
+/* External stylesheet for Heart for Children School Program Page */
+
+:root{ --bg:#023e8a; --card:#0b1220cc; --glass: rgba(255,255,255,0.06); --accent1:#7dd3fc; --accent2:#fca5a5; --muted:#9aa4b2; --radius:16px; --glass-border: rgba(255,255,255,0.08); --max-width:1100px; --glass-gradient: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); }
+
+*{ box-sizing:border-box } html,body{ height:100% } body{ margin:0; font-family:Inter, system-ui, sans-serif; background: radial-gradient(1200px 600px at 10% 10%, rgba(125,211,252,0.06), transparent), radial-gradient(900px 400px at 90% 90%, rgba(252,165,165,0.04), transparent), var(--bg); color:#e6eef6; padding:48px 20px; display:flex; justify-content:center; }
+
+.container{ width:100%; max-width:var(--max-width); display:grid; grid-template-columns:1fr 380px; gap:28px; align-items:start; }
+
+header.site-header{ grid-column:1 / -1; display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
+
+.brand{ display:flex; gap:12px; align-items:center } .logo{ width:56px;height:56px;border-radius:12px; display:grid;place-items:center; background:linear-gradient(135deg,var(--accent1),var(--accent2)); font-weight:800;font-size:20px;color:#04203a; }
+
+nav.top-actions{ display:flex; gap:12px } button.cta{ background:linear-gradient(90deg,var(--accent1),var(--accent2)); border:0;padding:10px 14px;border-radius:12px;font-weight:700;color:#052231;cursor:pointer; } button.ghost{ background:transparent; border:1px solid var(--glass-border); padding:8px 12px;border-radius:12px;color:var(--muted);cursor:pointer; }
+
+.main-card{ background:var(--card); border-radius:20px;padding:26px; border:1px solid rgba(255,255,255,0.03); backdrop-filter:blur(6px) saturate(120%); }
+
+.hero{ display:flex;gap:20px;align-items:center;margin-bottom:18px } .eyebrow{ font-size:13px;color:var(--accent1);font-weight:500 } .title{ font-size:28px;margin:6px 0 8px } .lede{ color:var(--muted);margin-bottom:14px }
+
+.program-meta{ display:flex;gap:10px;flex-wrap:wrap } .pill{ background:var(--glass); padding:8px 12px;border-radius:999px; border:1px solid var(--glass-border); color:var(--muted);font-size:13px;font-weight:600; }
+
+.gallery{ width:380px;border-radius:14px;overflow:hidden; border:1px solid var(--glass-border); background:var(--glass-gradient); display:grid;grid-template-columns:repeat(2,1fr); grid-auto-rows:110px;gap:6px;padding:6px; } .gallery img{ width:100%;height:100%;object-fit:cover;border-radius:8px } .gallery .big{ grid-column:1/-1;height:220px }
+
+.programs{ display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px } .program-card{ background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01)); padding:14px;border-radius:12px;border:1px solid var(--glass-border); } .program-card h3{ margin:0 0 8px;font-size:15px } .program-card p{ color:var(--muted);font-size:13px;margin:0 } .age{ margin-top:8px;color:var(--accent2);font-weight:700 }
+
+.sidebar{ position:sticky;top:48px;padding:18px;border-radius:16px; border:1px solid var(--glass-border); backdrop-filter:blur(6px); background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.02)); } .price{ font-size:18px;font-weight:800;color:var(--accent1) }
+
+.schedule{ width:100%;border-collapse:collapse;font-size:13px;margin-top:12px } .schedule th, .schedule td{ padding:10px;border-bottom:1px dashed rgba(255,255,255,0.03) } .schedule th{ color:var(--muted);font-size:12px }
+
+.testimonials{ display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px } .testimonial{ padding:12px;background:var(--glass); border-radius:10px;border:1px solid var(--glass-border); } .testimonial p{ color:var(--muted);font-size:13px;margin:0 }
+
+footer.small{ grid-column:1/-1;color:var(--muted);font-size:13px;text-align:center;margin-top:18px }
+
+@media(max-width:1024px){ .container{ grid-template-columns:1fr } .gallery{ width:100%;grid-template-columns:repeat(3,1fr) } .hero{ flex-direction:column } } @media(max-width:420px){ .programs{ grid-template-columns:1fr } .testimonials{ grid-template-columns:1fr } }
